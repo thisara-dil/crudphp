@@ -9,10 +9,22 @@
     padding: 50px;
 }
 
+.container .head{
+    text-align: center;
+    font-weight: 500;
+    background-color: black ;
+}
 .container table,th,td{
     border: 1px solid black;
 }
 .container table{
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
+}
+.box .h2{
+    float: left;
+}
+
+.box  .btn{
+    float: right;
 }
