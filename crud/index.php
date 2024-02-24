@@ -10,8 +10,14 @@
 </head>
 <body>
 <?=include('dbcon.php');?>
-<h1>Crud Application in PHP </h1>
 <div class="container">
+    <div class="head">
+        <h1>Crud Application in PHP </h1>
+    </div>
+    <div class="box">
+    <h2>All Students</h2>
+    <button class="btn">Add Student</button>
+    </div>
     <div class="table">
         <table>
             <thead>
@@ -32,7 +38,7 @@
             while($row = mysqli_fetch_assoc($result)){
                 ?>
                 <tr>
-                    <td><?=$row['id']?></td>
+                    <td><?=$row['Id']?></td>
                     <td><?=$row['first_name']?></td>
                     <td><?=$row['last_name']?></td>
                     <td><?=$row['age']?></td>
